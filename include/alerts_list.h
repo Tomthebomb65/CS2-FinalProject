@@ -28,3 +28,4 @@ class LinkedList {
         AlertsNode* getHead() const;
 };
 #endif
+//test
