@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/ClassProject.dir/src/main.cpp.o -o ClassProject 
