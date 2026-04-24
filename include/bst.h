@@ -1,3 +1,6 @@
+#ifndef ALERTS_H
+#define ALERTS_H
+
 #include "ship_systems.h"
 
 struct BSTNode {
@@ -29,3 +32,4 @@ class BST {
         int getSize() const;
         BSTNode* getRoot() const;
 };
+#endif
