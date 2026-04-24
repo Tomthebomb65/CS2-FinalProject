@@ -27,8 +27,5 @@ class LinkedList {
         int getSize() const;
         AlertsNode* getHead() const;
 };
-<<<<<<< HEAD
+
 #endif
-=======
-#endif
->>>>>>> 1f3b703d3c55e8f614bed6a6dd1353d7914ef686
