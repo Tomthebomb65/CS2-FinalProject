@@ -1,5 +1,5 @@
-#ifndef ALERTS_H
-#define ALERTS_H
+#ifndef BST_H
+#define BST_H
 
 #include "ship_systems.h"
 
@@ -7,29 +7,36 @@ struct BSTNode {
     System* data;
     BSTNode* left;
     BSTNode* right;
+
+    BSTNode(System* s) {
+        data = s;
+        left = nullptr;
+        right = nullptr;
+    }
 };
 
 class BST {
-    private:
-        BSTNode* root;
-        int size;
+private:
+    BSTNode* root;
+    int size;
 
-        bool insert(BSTNode* current, BSTNode* insertion);
-        bool deleteTree(BSTNode* node);
+    BSTNode* insert(BSTNode* node, System* system);
+    BSTNode* search(BSTNode* node, int id);
+    BSTNode* remove(BSTNode* node, int id);
+    BSTNode* findMin(BSTNode* node);
+    void destroyTree(BSTNode* node);
 
-    public:
-        //Constructors and Destructor
-        BST();
-        BST(System* system);
-        ~BST();
-        
-        //Insert, search, and delete operations
-        bool insert(System* system);
-        BSTNode* search(BSTNode* current, int id);
-        bool deleteNode(BSTNode* current, int id);
+public:
+    BST();
+    ~BST();
 
-        //Getters
-        int getSize() const;
-        BSTNode* getRoot() const;
+    bool insert(System* system);
+    System* search(int id);
+    bool deleteNode(int id);
+
+    //Getters
+    int getSize() const;
+    BSTNode* getRoot() const;
 };
+
 #endif

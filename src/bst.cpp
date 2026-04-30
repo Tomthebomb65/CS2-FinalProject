@@ -1,149 +1,128 @@
 #include "bst.h"
 #include <iostream>
 
-//Default Constructor
+//Constructor
 BST::BST() {
     root = nullptr;
     size = 0;
 }
 
-//Parameterized Constructor
-BST::BST(System* system) {
-    root = new BSTNode{system, nullptr, nullptr};
-    size = 1;
-}
-
 //Destructor
 BST::~BST() {
-    deleteTree(root);
+    destroyTree(root);
 }
 
-//Recursively delete all nodes
-bool BST::deleteTree(BSTNode* node) {
-    if (node == nullptr) {
-        return false;
-    }
+//Delete Tree
+void BST::destroyTree(BSTNode* node) {
+    if (node == nullptr)
+        return;
 
-    deleteTree(node->left);
-    deleteTree(node->right);
-
-    delete node->data;  //delete System*
-    delete node;        //delete node itself
-
-    return true;
-}
-
-//Insert helper (iterative)
-bool BST::insert(BSTNode* current, BSTNode* insertion) {
-    if (current == nullptr || insertion == nullptr) {
-        return false;
-    }
-
-    while (true) {
-        if (insertion->data->getId() < current->data->getId()) {
-            if (current->left == nullptr) {
-                current->left = insertion;
-                return true;
-            }
-            current = current->left;
-        }
-        else {
-            if (current->right == nullptr) {
-                current->right = insertion;
-                return true;
-            }
-            current = current->right;
-        }
-    }
-}
-
-// Public insert
-bool BST::insert(System* system) {
-    BSTNode* newNode = new BSTNode{system, nullptr, nullptr};
-
-    if (root == nullptr) {
-        root = newNode;
-        size = 1;
-        return true;
-    }
-
-    bool success = insert(root, newNode);
-    if (success) {
-        size++;
-    }
-
-    return success;
-}
-
-//Recursive search
-BSTNode* BST::search(BSTNode* current, int id) {
-    if (current == nullptr) {
-        return nullptr;
-    }
-    if (id == current->data->getId()) {
-        return current;
-    }
-    if (id < current->data->getId()) {
-        return search(current->left, id);
-    }
-    return search(current->right, id);
-}
-
-//Delete a node by ID
-bool BST::deleteNode(BSTNode* current, int id) {
-    BSTNode* parent = nullptr;
-    BSTNode* node = current;
-
-    //Search for node
-    while (node != nullptr && node->data->getId() != id) {
-        parent = node;
-        if (id < node->data->getId()) {
-            node = node->left;
-        }
-        else {
-            node = node->right;
-        }
-    }
-
-    if (node == nullptr) {
-        return false;
-    }
-
-    //Node has two children
-    if (node->left != nullptr && node->right != nullptr) {
-        //Find inorder successor
-        BSTNode* successorParent = node;
-        BSTNode* successor = node->right;
-
-        while (successor->left != nullptr) {
-            successorParent = successor;
-            successor = successor->left;
-        }
-
-        node->data = successor->data;
-
-        node = successor;
-        parent = successorParent;
-    }
-
-    //Node has 0 or 1 child
-    BSTNode* child = (node->left != nullptr) ? node->left : node->right;
-
-    if (parent == nullptr) {
-        root = child;
-    }
-    else if (parent->left == node) {
-        parent->left = child;
-    }
-    else {
-        parent->right = child;
-    }
+    destroyTree(node->left);
+    destroyTree(node->right);
 
     delete node->data;
     delete node;
-    size--;
+}
 
-    return true;
+//Insert
+BSTNode* BST::insert(BSTNode* node, System* system) {
+    if (node == nullptr) {
+        size++;
+        return new BSTNode(system);
+    }
+
+    if (system->getId() < node->data->getId()) {
+        node->left = insert(node->left, system);
+    }
+    else if (system->getId() > node->data->getId()) {
+        node->right = insert(node->right, system);
+    }
+    else {
+        return node;
+    }
+
+    return node;
+}
+
+bool BST::insert(System* system) {
+    int before = size;
+    root = insert(root, system);
+    return size > before;
+}
+
+//Search
+BSTNode* BST::search(BSTNode* node, int id) {
+    if (node == nullptr)
+        return nullptr;
+
+    if (id == node->data->getId())
+        return node;
+
+    if (id < node->data->getId())
+        return search(node->left, id);
+
+    return search(node->right, id);
+}
+
+System* BST::search(int id) {
+    BSTNode* result = search(root, id);
+    return (result ? result->data : nullptr);
+}
+
+//Delete
+BSTNode* BST::findMin(BSTNode* node) {
+    while (node->left != nullptr)
+        node = node->left;
+    return node;
+}
+
+BSTNode* BST::remove(BSTNode* node, int id) {
+    if (node == nullptr)
+        return nullptr;
+
+    if (id < node->data->getId()) {
+        node->left = remove(node->left, id);
+    }
+    else if (id > node->data->getId()) {
+        node->right = remove(node->right, id);
+    }
+    else {
+        // Node found
+        if (node->left == nullptr && node->right == nullptr) {
+            delete node->data;
+            delete node;
+            size--;
+            return nullptr;
+        }
+        else if (node->left == nullptr) {
+            BSTNode* temp = node->right;
+            delete node->data;
+            delete node;
+            size--;
+            return temp;
+        }
+        else if (node->right == nullptr) {
+            BSTNode* temp = node->left;
+            delete node->data;
+            delete node;
+            size--;
+            return temp;
+        }
+        else {
+            // Two children
+            BSTNode* minNode = findMin(node->right);
+            node->data = minNode->data;
+            node->right = remove(node->right, minNode->data->getId());
+        }
+    }
+
+    return node;
+}
+
+bool BST::deleteNode(int id) {
+    int before = size;
+    root = remove(root, id);
+    return size < before;
 }
 
 //Getters
