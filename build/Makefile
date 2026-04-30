@@ -127,19 +127,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ClassProject
-
-# Build rule for target.
-ClassProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ClassProject
-.PHONY : ClassProject
-
-# fast build rule for target.
-ClassProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassProject.dir/build.make CMakeFiles/ClassProject.dir/build
-.PHONY : ClassProject/fast
-
-#=============================================================================
 # Target rules for targets named ProjectTests
 
 # Build rule for target.
@@ -152,29 +139,125 @@ ProjectTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/build
 .PHONY : ProjectTests/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/alerts.o: src/alerts.cpp.o
+.PHONY : src/alerts.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassProject.dir/build.make CMakeFiles/ClassProject.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/alerts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts.cpp.o
+.PHONY : src/alerts.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/alerts.i: src/alerts.cpp.i
+.PHONY : src/alerts.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassProject.dir/build.make CMakeFiles/ClassProject.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/alerts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts.cpp.i
+.PHONY : src/alerts.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/alerts.s: src/alerts.cpp.s
+.PHONY : src/alerts.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassProject.dir/build.make CMakeFiles/ClassProject.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/alerts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts.cpp.s
+.PHONY : src/alerts.cpp.s
+
+src/alerts_list.o: src/alerts_list.cpp.o
+.PHONY : src/alerts_list.o
+
+# target to build an object file
+src/alerts_list.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o
+.PHONY : src/alerts_list.cpp.o
+
+src/alerts_list.i: src/alerts_list.cpp.i
+.PHONY : src/alerts_list.i
+
+# target to preprocess a source file
+src/alerts_list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.i
+.PHONY : src/alerts_list.cpp.i
+
+src/alerts_list.s: src/alerts_list.cpp.s
+.PHONY : src/alerts_list.s
+
+# target to generate assembly for a file
+src/alerts_list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.s
+.PHONY : src/alerts_list.cpp.s
+
+src/bst.o: src/bst.cpp.o
+.PHONY : src/bst.o
+
+# target to build an object file
+src/bst.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/bst.cpp.o
+.PHONY : src/bst.cpp.o
+
+src/bst.i: src/bst.cpp.i
+.PHONY : src/bst.i
+
+# target to preprocess a source file
+src/bst.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/bst.cpp.i
+.PHONY : src/bst.cpp.i
+
+src/bst.s: src/bst.cpp.s
+.PHONY : src/bst.s
+
+# target to generate assembly for a file
+src/bst.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/bst.cpp.s
+.PHONY : src/bst.cpp.s
+
+src/crew_members.o: src/crew_members.cpp.o
+.PHONY : src/crew_members.o
+
+# target to build an object file
+src/crew_members.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o
+.PHONY : src/crew_members.cpp.o
+
+src/crew_members.i: src/crew_members.cpp.i
+.PHONY : src/crew_members.i
+
+# target to preprocess a source file
+src/crew_members.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/crew_members.cpp.i
+.PHONY : src/crew_members.cpp.i
+
+src/crew_members.s: src/crew_members.cpp.s
+.PHONY : src/crew_members.s
+
+# target to generate assembly for a file
+src/crew_members.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/crew_members.cpp.s
+.PHONY : src/crew_members.cpp.s
+
+src/ship_systems.o: src/ship_systems.cpp.o
+.PHONY : src/ship_systems.o
+
+# target to build an object file
+src/ship_systems.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o
+.PHONY : src/ship_systems.cpp.o
+
+src/ship_systems.i: src/ship_systems.cpp.i
+.PHONY : src/ship_systems.i
+
+# target to preprocess a source file
+src/ship_systems.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.i
+.PHONY : src/ship_systems.cpp.i
+
+src/ship_systems.s: src/ship_systems.cpp.s
+.PHONY : src/ship_systems.s
+
+# target to generate assembly for a file
+src/ship_systems.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectTests.dir/build.make CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.s
+.PHONY : src/ship_systems.cpp.s
 
 tests/project_tests.o: tests/project_tests.cpp.o
 .PHONY : tests/project_tests.o
@@ -209,11 +292,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ClassProject"
 	@echo "... ProjectTests"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/alerts.o"
+	@echo "... src/alerts.i"
+	@echo "... src/alerts.s"
+	@echo "... src/alerts_list.o"
+	@echo "... src/alerts_list.i"
+	@echo "... src/alerts_list.s"
+	@echo "... src/bst.o"
+	@echo "... src/bst.i"
+	@echo "... src/bst.s"
+	@echo "... src/crew_members.o"
+	@echo "... src/crew_members.i"
+	@echo "... src/crew_members.s"
+	@echo "... src/ship_systems.o"
+	@echo "... src/ship_systems.i"
+	@echo "... src/ship_systems.s"
 	@echo "... tests/project_tests.o"
 	@echo "... tests/project_tests.i"
 	@echo "... tests/project_tests.s"

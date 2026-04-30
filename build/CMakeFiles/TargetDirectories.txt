@@ -1,4 +1,3 @@
-/home/thomas/Project/Final Project/build/CMakeFiles/ClassProject.dir
 /home/thomas/Project/Final Project/build/CMakeFiles/ProjectTests.dir
 /home/thomas/Project/Final Project/build/CMakeFiles/test.dir
 /home/thomas/Project/Final Project/build/CMakeFiles/edit_cache.dir

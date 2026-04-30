@@ -83,19 +83,99 @@ CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/tests/project_tests.cpp" -o CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.s
 
+CMakeFiles/ProjectTests.dir/src/alerts.cpp.o: CMakeFiles/ProjectTests.dir/flags.make
+CMakeFiles/ProjectTests.dir/src/alerts.cpp.o: /home/thomas/Project/Final\ Project/src/alerts.cpp
+CMakeFiles/ProjectTests.dir/src/alerts.cpp.o: CMakeFiles/ProjectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjectTests.dir/src/alerts.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectTests.dir/src/alerts.cpp.o -MF CMakeFiles/ProjectTests.dir/src/alerts.cpp.o.d -o CMakeFiles/ProjectTests.dir/src/alerts.cpp.o -c "/home/thomas/Project/Final Project/src/alerts.cpp"
+
+CMakeFiles/ProjectTests.dir/src/alerts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjectTests.dir/src/alerts.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thomas/Project/Final Project/src/alerts.cpp" > CMakeFiles/ProjectTests.dir/src/alerts.cpp.i
+
+CMakeFiles/ProjectTests.dir/src/alerts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/src/alerts.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/src/alerts.cpp" -o CMakeFiles/ProjectTests.dir/src/alerts.cpp.s
+
+CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o: CMakeFiles/ProjectTests.dir/flags.make
+CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o: /home/thomas/Project/Final\ Project/src/alerts_list.cpp
+CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o: CMakeFiles/ProjectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o -MF CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o.d -o CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o -c "/home/thomas/Project/Final Project/src/alerts_list.cpp"
+
+CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thomas/Project/Final Project/src/alerts_list.cpp" > CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.i
+
+CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/src/alerts_list.cpp" -o CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.s
+
+CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o: CMakeFiles/ProjectTests.dir/flags.make
+CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o: /home/thomas/Project/Final\ Project/src/ship_systems.cpp
+CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o: CMakeFiles/ProjectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o -MF CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o.d -o CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o -c "/home/thomas/Project/Final Project/src/ship_systems.cpp"
+
+CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thomas/Project/Final Project/src/ship_systems.cpp" > CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.i
+
+CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/src/ship_systems.cpp" -o CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.s
+
+CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o: CMakeFiles/ProjectTests.dir/flags.make
+CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o: /home/thomas/Project/Final\ Project/src/crew_members.cpp
+CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o: CMakeFiles/ProjectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o -MF CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o.d -o CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o -c "/home/thomas/Project/Final Project/src/crew_members.cpp"
+
+CMakeFiles/ProjectTests.dir/src/crew_members.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjectTests.dir/src/crew_members.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thomas/Project/Final Project/src/crew_members.cpp" > CMakeFiles/ProjectTests.dir/src/crew_members.cpp.i
+
+CMakeFiles/ProjectTests.dir/src/crew_members.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/src/crew_members.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/src/crew_members.cpp" -o CMakeFiles/ProjectTests.dir/src/crew_members.cpp.s
+
+CMakeFiles/ProjectTests.dir/src/bst.cpp.o: CMakeFiles/ProjectTests.dir/flags.make
+CMakeFiles/ProjectTests.dir/src/bst.cpp.o: /home/thomas/Project/Final\ Project/src/bst.cpp
+CMakeFiles/ProjectTests.dir/src/bst.cpp.o: CMakeFiles/ProjectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectTests.dir/src/bst.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectTests.dir/src/bst.cpp.o -MF CMakeFiles/ProjectTests.dir/src/bst.cpp.o.d -o CMakeFiles/ProjectTests.dir/src/bst.cpp.o -c "/home/thomas/Project/Final Project/src/bst.cpp"
+
+CMakeFiles/ProjectTests.dir/src/bst.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjectTests.dir/src/bst.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thomas/Project/Final Project/src/bst.cpp" > CMakeFiles/ProjectTests.dir/src/bst.cpp.i
+
+CMakeFiles/ProjectTests.dir/src/bst.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjectTests.dir/src/bst.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thomas/Project/Final Project/src/bst.cpp" -o CMakeFiles/ProjectTests.dir/src/bst.cpp.s
+
 # Object files for target ProjectTests
 ProjectTests_OBJECTS = \
-"CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.o"
+"CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.o" \
+"CMakeFiles/ProjectTests.dir/src/alerts.cpp.o" \
+"CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o" \
+"CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o" \
+"CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o" \
+"CMakeFiles/ProjectTests.dir/src/bst.cpp.o"
 
 # External object files for target ProjectTests
 ProjectTests_EXTERNAL_OBJECTS =
 
 ProjectTests: CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.o
+ProjectTests: CMakeFiles/ProjectTests.dir/src/alerts.cpp.o
+ProjectTests: CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o
+ProjectTests: CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o
+ProjectTests: CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o
+ProjectTests: CMakeFiles/ProjectTests.dir/src/bst.cpp.o
 ProjectTests: CMakeFiles/ProjectTests.dir/build.make
 ProjectTests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 ProjectTests: /usr/lib/x86_64-linux-gnu/libgtest.a
 ProjectTests: CMakeFiles/ProjectTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProjectTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/thomas/Project/Final Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ProjectTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjectTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I"/home/thomas/Project/Final Project/include" -I"/home/thomas/Project/Final Project/src"
 
-CXX_FLAGS = -g -DGTEST_HAS_PTHREAD=1
+CXX_FLAGS = -g -std=gnu++17 -DGTEST_HAS_PTHREAD=1
 

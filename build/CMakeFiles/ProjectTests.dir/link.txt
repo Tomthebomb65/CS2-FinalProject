@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.o -o ProjectTests  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a 
+/usr/bin/c++ -g CMakeFiles/ProjectTests.dir/tests/project_tests.cpp.o CMakeFiles/ProjectTests.dir/src/alerts.cpp.o CMakeFiles/ProjectTests.dir/src/alerts_list.cpp.o CMakeFiles/ProjectTests.dir/src/ship_systems.cpp.o CMakeFiles/ProjectTests.dir/src/crew_members.cpp.o CMakeFiles/ProjectTests.dir/src/bst.cpp.o -o ProjectTests  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a 

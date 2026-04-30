@@ -87,34 +87,35 @@ BSTNode* BST::remove(BSTNode* node, int id) {
         node->right = remove(node->right, id);
     }
     else {
-        // Node found
-        if (node->left == nullptr && node->right == nullptr) {
-            delete node->data;
-            delete node;
-            size--;
-            return nullptr;
-        }
-        else if (node->left == nullptr) {
-            BSTNode* temp = node->right;
-            delete node->data;
-            delete node;
-            size--;
-            return temp;
-        }
-        else if (node->right == nullptr) {
-            BSTNode* temp = node->left;
-            delete node->data;
-            delete node;
-            size--;
-            return temp;
-        }
-        else {
-            // Two children
-            BSTNode* minNode = findMin(node->right);
-            node->data = minNode->data;
-            node->right = remove(node->right, minNode->data->getId());
-        }
+    //Node found
+    if (node->left == nullptr && node->right == nullptr) {
+        delete node->data;
+        delete node;
+        size--;
+        return nullptr;
     }
+    else if (node->left == nullptr) {
+        BSTNode* temp = node->right;
+        delete node->data;
+        delete node;
+        size--;
+        return temp;
+    }
+    else if (node->right == nullptr) {
+        BSTNode* temp = node->left;
+        delete node->data;
+        delete node;
+        size--;
+        return temp;
+    }
+    else {
+        //Two children
+        BSTNode* minNode = findMin(node->right);
+
+        *(node->data) = *(minNode->data);
+        node->right = remove(node->right, minNode->data->getId());
+    }
+}
 
     return node;
 }

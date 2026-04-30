@@ -9,7 +9,7 @@
                 "-S",
                 ".",
                 "-B",
-                "${workspaceFolder}/build",               
+                "${workspaceFolder}/build"
             ],
             "group": {
                 "kind": "build",
@@ -24,7 +24,7 @@
                 "--build",
                 "${workspaceFolder}/build",
                 "--target",
-                "ClassProject",
+                "ProjectTests",
                 "--config",
                 "Debug"
             ],
@@ -32,7 +32,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn": ["CMake Configure"],
+            "dependsOn": ["Configure"]
         },
         {
             "label": "Build Tests",
@@ -50,7 +50,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn": ["CMake Configure"],
+            "dependsOn": ["Configure"]
         },
         {
             "label": "Clean",
@@ -63,7 +63,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         }
     ]
 }
