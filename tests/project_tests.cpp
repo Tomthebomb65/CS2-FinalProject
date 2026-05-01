@@ -1,16 +1,6 @@
 // ============================================================================
-// Spaceship Systems Manager - Comprehensive Test Suite
-// Tests for: 
-//   Alert (base class)
-//   LinkedList (Alert list)
-//   System (base class)
-//   LifeSupport / Power (derived classes)
-//   CrewMember (base class)
-//   BST (recursive binary search tree)
-//   Polymorphism integration
-//
-// Build:  (CMake handles this automatically)
-// Run:    ./ProjectTests
+// Spaceship Systems Manager Tests
+// Thomas Guthmann
 // ============================================================================
 
 #include <gtest/gtest.h>
@@ -132,7 +122,7 @@ TEST_F(AlertListTest, DeleteLastRemainingNode) {
 }
 
 // ============================================================================
-// SYSTEM CLASS TESTS (Base + Derived)
+// SYSTEM CLASS TESTS
 // ============================================================================
 
 TEST(SystemTest, BaseClassConstructor) {
@@ -207,7 +197,7 @@ TEST(CrewMemberTest, SettersWorkCorrectly) {
 }
 
 // ============================================================================
-// BST TESTS (Recursive)
+// BST TESTS
 // ============================================================================
 
 class BSTTest : public ::testing::Test {
