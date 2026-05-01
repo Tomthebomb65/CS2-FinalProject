@@ -2,27 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "ClassProject",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/ClassProject",
-            "args": [],
-            "stopAtEntry": true,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "",
-            "miDebuggerPath": "/usr/bin/gdb"
-        },
-        {
             "name": "ProjectTests",
             "type": "cppdbg",
             "request": "launch",
